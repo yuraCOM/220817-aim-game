@@ -1,4 +1,5 @@
 const startBtn = document.querySelector("#start");
+const startNewBtn = document.querySelector("#start-new");
 const screens = document.querySelectorAll(".screen");
 const timeList = document.querySelector("#time-list");
 const timeElem = document.querySelector("#time");
@@ -10,6 +11,11 @@ let score = 0;
 startBtn.addEventListener("click", (event) => {
   event.preventDefault();
   screens[0].classList.add("up");
+});
+
+startNewBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  location.reload();
 });
 
 timeList.addEventListener("click", (event) => {
